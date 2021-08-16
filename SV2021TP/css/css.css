@@ -1,0 +1,49 @@
+header {
+    height: 75px;
+    padding: 1rem;
+    color: rgb(100, 82, 82);
+    background: #dde9f7;
+    font-weight: bold;
+    font-size: 190%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .logo{
+      padding-top: 10;
+      
+  }
+
+  .background__char {
+    width: 900px;
+    height: 900px;
+    background-color: rgb(240, 212, 151);
+    position: absolute;
+    top: 15vh;
+    left: 1vw;
+  }
+  /* .two {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(219, 219, 219);
+    position: absolute;
+    top: 72vh;
+    left: 44vw;
+  }
+  .three {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(219, 219, 219);
+    position: absolute;
+    top: 56vh;
+    left: 35vw;
+  }
+  .four {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(219, 219, 219);
+    position: absolute;
+    top: 55vh;
+    left: 45vw;
+  }*/
