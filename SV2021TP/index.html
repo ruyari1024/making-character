@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자캐 제작소</title>
+    <script type="text/javascript">
+ 
+ jQuery(document).ready(function() {
+
+jQuery("#btn").click(function() {
+
+    if(jQuery("#displayDiv").css("display") == "none") {
+
+        jQuery("#displayDiv").css("display", "block");
+    }
+   
+    else {
+
+        jQuery("#displayDiv").css("display", "none");
+    }
+});
+});
+        </script>
 
     <link rel="stylesheet" href="./css/css.css">
 </head>
@@ -14,6 +32,14 @@
         
     </header>
 
+    
+    <!-- ====================================================버튼==================================================== -->
+    <hr/>
+    <button type="button" id="btn">보기 또는 숨기기</button>
+    <div id="displayDiv">
+        <img src="images/koala.jpg" width="400" height="300">
+    </div>   
+
     <div class="background__char">
         <table>
             <tr>
@@ -21,10 +47,6 @@
             </tr>
         </table>
     </div>
-    <!-- ====================================================버튼==================================================== -->
-    <div style="position: absolute; top: 83vh; left: 49vw">
-        <img id="img" src="./img/자캐공작소 로고.png" alt=""/>
-      </div>
 </body>
 
 </html>

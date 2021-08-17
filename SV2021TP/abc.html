@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 <head>
 <meta charset="utf-8">
 <title>Insert title here</title>
@@ -13,4 +13,40 @@ function ChangeImg(){
 <div onclick="ChangeImg()" style="left: 10px;">커피이미지</div>
 <img id="imgId" src="./img/자캐공작소 로고.png">
 </body>
+</html> -->
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>움직이는 물고기</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+
+        jQuery("#btn").click(function() {
+
+            if(jQuery("#displayDiv").css("display") == "none") {
+
+                jQuery("#displayDiv").css("display", "block");
+            }
+           
+            else {
+
+                jQuery("#displayDiv").css("display", "none");
+            }
+        });
+    });
+</script>
+</head>
+<body>
+    <h1>이미지 출력 및 숨기기</h1>
+    <hr/>
+    <button type="button" id="btn">보기 또는 숨기기</button>
+    <div id="displayDiv">
+        <img src="images/koala.jpg" width="400" height="300">
+    </div>   
+</body>
 </html>
+
+출처: https://wickedmagic.tistory.com/487 [사악미소의 현대마법의 공방]

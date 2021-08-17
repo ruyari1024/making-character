@@ -18,7 +18,7 @@ header {
   .background__char {
     width: 900px;
     height: 900px;
-    background-color: rgb(240, 212, 151);
+    
     position: absolute;
     top: 15vh;
     left: 1vw;
