@@ -683,6 +683,7 @@ jQuery(document).ready(function() {
     });
 });
 jQuery(document).ready(function() {
+
     
     jQuery("#btn46").click(function() {
 
@@ -697,6 +698,15 @@ jQuery(document).ready(function() {
         }
     });
 });
+$(function(){
+  $('.tabcontent > div').hide();
+  $('.tabnav a').click(function () {
+    $('.tabcontent > div').hide().filter(this.hash).fadeIn();
+    $('.tabnav a').removeClass('active');
+    $(this).addClass('active');
+    return false;
+  }).filter(':eq(0)').click();
+  });
 
 
 // ================================================================================================================
@@ -713,198 +723,228 @@ jQuery(document).ready(function() {
     
     <!-- ====================================================버튼==================================================== -->
     <!-- ============================================================================================================================================== -->
-    <div class="button">
-        <div class="button_1">
-            <div class="button01">
-                <button type="button" id="btn" style="margin-bottom:20PX;"><h3>피부1</h3></button>
+    <div class="tab">
+        <ul class="tabnav">
+          <li><a href="#tab01">피부색</a></li>
+          <li><a href="#tab02">앞머리</a></li>
+          <li><a href="#tab03">뒷머리</a></li>
+          <li><a href="#tab04">묶인머리</a></li>
+          <li><a href="#tab05">눈</a></li>
+          <li><a href="#tab06">머리장식</a></li>
+          <li><a href="#tab07">옷</a></li>
+        </ul>
+        <div class="tabcontent">
+          <div id="tab01">
+            <div class="button_1">
+                <div class="button01">
+                    <button type="button" id="btn" style="margin-bottom:20PX;"><h3>피부1</h3></button>
+                </div>
+                <!-- ----------------------------- -->
+                <div class="button02">              
+                    <button type="button" id="btn2" style="margin-bottom: 20PX;"><h3>피부2</h3></button>
+                </div>
+                 <!-- ----------------------------- -->
+                 <div class="button03">              
+                    <button type="button" id="btn3" style="margin-bottom: 20PX;"><h3>피부3</h3></button>
+                </div>
+                 <!-- ----------------------------- -->
+                 <div class="button04">              
+                    <button type="button" id="btn4" style="margin-bottom: 20PX;"><h3>피부4</h3></button>
+                </div>
+                 <!-- ----------------------------- -->
+                 <div class="button05">              
+                    <button type="button" id="btn5" style="margin-bottom: 20PX;"><h3>피부5</h3></button>
+                </div>
             </div>
-            <!-- ----------------------------- -->
-            <div class="button02">              
-                <button type="button" id="btn2" style="margin-bottom: 20PX;"><h3>피부2</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-             <div class="button03">              
-                <button type="button" id="btn3" style="margin-bottom: 20PX;"><h3>피부3</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-             <div class="button04">              
-                <button type="button" id="btn4" style="margin-bottom: 20PX;"><h3>피부4</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-             <div class="button05">              
-                <button type="button" id="btn5" style="margin-bottom: 20PX;"><h3>피부5</h3></button>
-            </div>
+          </div>
+          <div id="tab02">
+              <div class="button_tab2">
+                <div class="button_2">
+                    <!-- ----------------------------- -->
+                    <div class="button06">              
+                        <button type="button" id="btn6" style="margin-bottom: 20PX;"><h3>머리1</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                     <div class="button07">              
+                        <button type="button" id="btn7" style="margin-bottom: 20PX;"><h3>머리2</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                     <div class="button08">              
+                        <button type="button" id="btn8" style="margin-bottom: 20PX;"><h3>머리3</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                     <div class="button06">              
+                        <button type="button" id="btn9" style="margin-bottom: 20PX;"><h3>머리4</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                     <div class="button07">              
+                        <button type="button" id="btn10" style="margin-bottom: 20PX;"><h3>머리5</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                     <div class="button08">              
+                        <button type="button" id="btn11" style="margin-bottom: 20PX;"><h3>머리6</h3></button>
+                    </div>
+                    <!-- ----------------------------- -->
+                    <div class="button06">              
+                        <button type="button" id="btn12" style="margin-bottom: 20PX;"><h3>머리7</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                     <div class="button07">              
+                        <button type="button" id="btn13" style="margin-bottom: 20PX;"><h3>머리8</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                     <div class="button08">              
+                        <button type="button" id="btn14" style="margin-bottom: 20PX;"><h3>머리9</h3></button>
+                    </div>
+                </div>
+                <!-- ================================================================================================================================= -->
+                <div class="button_3">
+                    <div class="button09">              
+                        <button type="button" id="btn15" style="margin-bottom: 20PX;"><h3>머리10</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button11">              
+                        <button type="button" id="btn16" style="margin-bottom: 20PX;"><h3>머리11</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button12">              
+                        <button type="button" id="btn17" style="margin-bottom: 20PX;"><h3>머리12</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button13">              
+                        <button type="button" id="btn18" style="margin-bottom: 20PX;"><h3>머리13</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button14">              
+                        <button type="button" id="btn19" style="margin-bottom: 20PX;"><h3>머리14</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button15">              
+                        <button type="button" id="btn20" style="margin-bottom: 20PX;"><h3>머리15</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                </div>
+              </div>
+          </div>
+          <div id="tab03">
+              <div class="button_tab3">
+                <div class="button_4">
+                    <div class="button16">              
+                        <button type="button" id="btn21" style="margin-bottom: 20PX;"><h3>뒷머리 1</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button17">              
+                        <button type="button" id="btn22" style="margin-bottom: 20PX;"><h3>뒷머리 2</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button18">              
+                        <button type="button" id="btn23" style="margin-bottom: 20PX;"><h3>뒷머리 3</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button19">              
+                        <button type="button" id="btn24" style="margin-bottom: 20PX;"><h3>뒷머리 4</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button20">              
+                        <button type="button" id="btn25" style="margin-bottom: 20PX;"><h3>뒷머리 5</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button21">              
+                        <button type="button" id="btn26" style="margin-bottom: 20PX;"><h3>뒷머리 6</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button22">              
+                        <button type="button" id="btn27" style="margin-bottom: 20PX;"><h3>뒷머리 7</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button23">              
+                        <button type="button" id="btn28" style="margin-bottom: 20PX;"><h3>뒷머리 8</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button24">              
+                        <button type="button" id="btn29" style="margin-bottom: 20PX;"><h3>뒷머리 9</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                </div>
+                <!-- ================================================================================================================================= -->
+                <div class="button_5">
+                    <div class="button25">              
+                        <button type="button" id="btn30" style="margin-bottom: 20PX;"><h3>뒷머리 10</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button26">              
+                        <button type="button" id="btn31" style="margin-bottom: 20PX;"><h3>뒷머리 11</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button27">              
+                        <button type="button" id="btn32" style="margin-bottom: 20PX;"><h3>뒷머리 12</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button28">              
+                        <button type="button" id="btn33" style="margin-bottom: 20PX;"><h3>뒷머리 13</h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button29">              
+                        <button type="button" id="btn34" style="margin-bottom: 20PX;"><h3>뒷머리 14</h3></button>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div id="tab04">
+              <div class="button_tab4">
+                <div class="button_6">
+                    <div class="button30">              
+                        <button type="button" id="btn35" style="margin-bottom: 20PX;"><h3>묶음 1</h3></button>
+                    </div>
+                    <div class="button31">              
+                        <button type="button" id="btn36" style="margin-bottom: 20PX;"><h3>묶음 2</h3></button>
+                    </div>
+                    <div class="button32">              
+                        <button type="button" id="btn37" style="margin-bottom: 20PX;"><h3>묶음 3</h3></button>
+                    </div>
+                    <div class="button33">              
+                        <button type="button" id="btn38" style="margin-bottom: 20PX;"><h3>묶음 4</h3></button>
+                    </div>
+                    <div class="button34">              
+                        <button type="button" id="btn39" style="margin-bottom: 20PX;"><h3>묶음 5</h3></button>
+                    </div>
+                    <div class="button35">              
+                        <button type="button" id="btn40" style="margin-bottom: 20PX;"><h3>묶음 6</h3></button>
+                    </div>
+                    <div class="button36">              
+                        <button type="button" id="btn41" style="margin-bottom: 20PX;"><h3>묶음 7</h3></button>
+                    </div>
+                    <div class="button37">              
+                        <button type="button" id="btn42" style="margin-bottom: 20PX;"><h3>묶음 8</h3></button>
+                    </div>
+                    <div class="button38">              
+                        <button type="button" id="btn43" style="margin-bottom: 20PX;"><h3>묶음 9</h3></button>
+                    </div>
+                </div>
+                <div class="button_7">
+                    <div class="button39">              
+                        <button type="button" id="btn44" style="margin-bottom: 20PX;"><h3>묶음 10</h3></button>
+                    </div>
+                    <div class="button40">              
+                        <button type="button" id="btn45" style="margin-bottom: 20PX;"><h3>묶음 11</h3></button>
+                    </div>
+                    <div class="button41">              
+                        <button type="button" id="btn46" style="margin-bottom: 20PX;"><h3>묶음 12</h3></button>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div id="tab05">tab5 content</div>
+          <div id="tab06">tab6 content</div>
+          <div id="tab07">tab7 content</div>
         </div>
+      </div><!--tab-->
+    <div class="button">
+        
         <!-- ================================================================================================================================= -->
         <br>
         <!-- ================================================================================================================================= -->
-        <div class="button_2">
-            <!-- ----------------------------- -->
-            <div class="button06">              
-                <button type="button" id="btn6" style="margin-bottom: 20PX;"><h3>머리1</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-             <div class="button07">              
-                <button type="button" id="btn7" style="margin-bottom: 20PX;"><h3>머리2</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-             <div class="button08">              
-                <button type="button" id="btn8" style="margin-bottom: 20PX;"><h3>머리3</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-             <div class="button06">              
-                <button type="button" id="btn9" style="margin-bottom: 20PX;"><h3>머리4</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-             <div class="button07">              
-                <button type="button" id="btn10" style="margin-bottom: 20PX;"><h3>머리5</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-             <div class="button08">              
-                <button type="button" id="btn11" style="margin-bottom: 20PX;"><h3>머리6</h3></button>
-            </div>
-            <!-- ----------------------------- -->
-            <div class="button06">              
-                <button type="button" id="btn12" style="margin-bottom: 20PX;"><h3>머리7</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-             <div class="button07">              
-                <button type="button" id="btn13" style="margin-bottom: 20PX;"><h3>머리8</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-             <div class="button08">              
-                <button type="button" id="btn14" style="margin-bottom: 20PX;"><h3>머리9</h3></button>
-            </div>
-
-        </div>
-        <!-- ================================================================================================================================= -->
-        <div class="button_3">
-            <div class="button09">              
-                <button type="button" id="btn15" style="margin-bottom: 20PX;"><h3>머리10</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button11">              
-                <button type="button" id="btn16" style="margin-bottom: 20PX;"><h3>머리11</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button12">              
-                <button type="button" id="btn17" style="margin-bottom: 20PX;"><h3>머리12</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button13">              
-                <button type="button" id="btn18" style="margin-bottom: 20PX;"><h3>머리13</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button14">              
-                <button type="button" id="btn19" style="margin-bottom: 20PX;"><h3>머리14</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button15">              
-                <button type="button" id="btn20" style="margin-bottom: 20PX;"><h3>머리15</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-        </div>
-        <!-- ================================================================================================================================= -->
-        <div class="button_4">
-            <div class="button16">              
-                <button type="button" id="btn21" style="margin-bottom: 20PX;"><h3>뒷머리 1</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button17">              
-                <button type="button" id="btn22" style="margin-bottom: 20PX;"><h3>뒷머리 2</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button18">              
-                <button type="button" id="btn23" style="margin-bottom: 20PX;"><h3>뒷머리 3</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button19">              
-                <button type="button" id="btn24" style="margin-bottom: 20PX;"><h3>뒷머리 4</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button20">              
-                <button type="button" id="btn25" style="margin-bottom: 20PX;"><h3>뒷머리 5</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button21">              
-                <button type="button" id="btn26" style="margin-bottom: 20PX;"><h3>뒷머리 6</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button22">              
-                <button type="button" id="btn27" style="margin-bottom: 20PX;"><h3>뒷머리 7</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button23">              
-                <button type="button" id="btn28" style="margin-bottom: 20PX;"><h3>뒷머리 8</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button24">              
-                <button type="button" id="btn29" style="margin-bottom: 20PX;"><h3>뒷머리 9</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-        </div>
-        <!-- ================================================================================================================================= -->
-        <div class="button_5">
-            <div class="button25">              
-                <button type="button" id="btn30" style="margin-bottom: 20PX;"><h3>뒷머리 10</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button26">              
-                <button type="button" id="btn31" style="margin-bottom: 20PX;"><h3>뒷머리 11</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button27">              
-                <button type="button" id="btn32" style="margin-bottom: 20PX;"><h3>뒷머리 12</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button28">              
-                <button type="button" id="btn33" style="margin-bottom: 20PX;"><h3>뒷머리 13</h3></button>
-            </div>
-             <!-- ----------------------------- -->
-            <div class="button29">              
-                <button type="button" id="btn34" style="margin-bottom: 20PX;"><h3>뒷머리 14</h3></button>
-            </div>
-        </div>
-        <div class="button_6">
-            <div class="button30">              
-                <button type="button" id="btn35" style="margin-bottom: 20PX;"><h3>묶음 1</h3></button>
-            </div>
-            <div class="button31">              
-                <button type="button" id="btn36" style="margin-bottom: 20PX;"><h3>묶음 2</h3></button>
-            </div>
-            <div class="button32">              
-                <button type="button" id="btn37" style="margin-bottom: 20PX;"><h3>묶음 3</h3></button>
-            </div>
-            <div class="button33">              
-                <button type="button" id="btn38" style="margin-bottom: 20PX;"><h3>묶음 4</h3></button>
-            </div>
-            <div class="button34">              
-                <button type="button" id="btn39" style="margin-bottom: 20PX;"><h3>묶음 5</h3></button>
-            </div>
-            <div class="button35">              
-                <button type="button" id="btn40" style="margin-bottom: 20PX;"><h3>묶음 6</h3></button>
-            </div>
-            <div class="button36">              
-                <button type="button" id="btn41" style="margin-bottom: 20PX;"><h3>묶음 7</h3></button>
-            </div>
-            <div class="button37">              
-                <button type="button" id="btn42" style="margin-bottom: 20PX;"><h3>묶음 8</h3></button>
-            </div>
-            <div class="button38">              
-                <button type="button" id="btn43" style="margin-bottom: 20PX;"><h3>묶음 9</h3></button>
-            </div>
-        </div>
-        <div class="button_7">
-            <div class="button39">              
-                <button type="button" id="btn44" style="margin-bottom: 20PX;"><h3>묶음 10</h3></button>
-            </div>
-            <div class="button40">              
-                <button type="button" id="btn45" style="margin-bottom: 20PX;"><h3>묶음 11</h3></button>
-            </div>
-            <div class="button41">              
-                <button type="button" id="btn46" style="margin-bottom: 20PX;"><h3>묶음 12</h3></button>
-            </div>
-        </div>
+    
     </div>  
     <!-- ==================================================================이미지 파트=======================================================================  -->
             <!-- ------------------------------------------------------------------------------------------------------------------------->

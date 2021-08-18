@@ -1,3 +1,18 @@
+html,body {width:100%;  }
+body,div,ul,li{margin:0; padding:0;}
+ul,li {list-style:none;}
+
+/*tab css*/
+.tab{float:right; width:600px; height:500px;}
+.tabnav{font-size:0; width:600px; border:1px solid #ddd;}
+.tabnav li{display: inline-block;  height:46px; text-align:center; border-right:1px solid #ddd;}
+.tabnav li a.active:before{background:#7ea21e;}
+.tabnav li a.active{border-bottom:1px solid #fff;}
+.tabnav li a{ position:relative; display:block; background: #f8f8f8; color: #000; padding:0 18px; line-height:46px; text-decoration:none; font-size:16px;}
+.tabnav li a:hover,
+.tabnav li a.active{background:#fff; color:#7ea21e; }
+.tabcontent{padding: 20px; height:720px; border:1px solid #ddd; border-top:none;}
+
 header {
     height: 75px;
     padding: 1rem;
@@ -27,20 +42,28 @@ header {
     display:flex;
     float: right;
   }
+  .button_tab2{
+    display:flex;
+  }
+  .button_tab3{
+    display: flex;
+  }
+  .button_tab4{
+    display: flex;
+  }
   .button_1{
    /* display: flex; */
-   text-align: right;
+   text-align: left;
    margin: 20px;
    
   }
   .button_2{
-   /* display: flex; */
-   text-align: right;
+   text-align: left;
    margin: 20px;
   }
   .button_3{
    /* display: flex; */
-   text-align: right;
+   text-align: left;
    margin: 20px;
   }
   .button_4{
