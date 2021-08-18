@@ -23,6 +23,11 @@ header {
     top: 15vh;
     left: 1vw;
   }
+  .button01{
+    text-align: right;
+    margin: 20px;
+    
+  }
   /* .two {
     width: 200px;
     height: 100px;
