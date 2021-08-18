@@ -23,10 +23,25 @@ header {
     top: 15vh;
     left: 1vw;
   }
-  .button01{
-    text-align: right;
-    margin: 20px;
-    
+  .button{
+    display:flex;
+    float: right;
+  }
+  .button_1{
+   /* display: flex; */
+   text-align: right;
+   margin: 20px;
+   
+  }
+  .button_2{
+   /* display: flex; */
+   text-align: right;
+   margin: 20px;
+  }
+  .button_3{
+   /* display: flex; */
+   text-align: right;
+   margin: 20px;
   }
   /* .two {
     width: 200px;
