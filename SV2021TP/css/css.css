@@ -25,6 +25,8 @@ header {
     align-items: center;
 
   }
+img{
+}
   .logo{
       padding-top: 10;
       
@@ -105,3 +107,4 @@ header {
    margin-top: 20px;
    margin-left: 25px;
   }
+  
