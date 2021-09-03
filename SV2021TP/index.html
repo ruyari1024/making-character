@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자캐 제작소</title>
+    <script src="./scripts/html2canvas.js"></script>
+    <script src="./scripts/pic.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    
     <script type="text/javascript">
    
         jQuery(document).ready(function() {
@@ -1796,6 +1797,10 @@ $(function(){
     </div>  
     <!-- ==================================================================이미지 파트=======================================================================  -->
             <!-- ------------------------------------------------------------------------------------------------------------------------->
+            
+            <div class="container" id='container' style="width: 120px; height: 120px;"> 
+               
+                 <!-- 결과화면을 그려줄 canvas --> 
             <div class="img" >
                 <div class="img001">
                     <div id="displayDiv" style="position: absolute; top: 40px;">
@@ -2111,7 +2116,7 @@ $(function(){
                     
                 </div>
             </div>
-            
+        </div>
             
         
              
@@ -2119,7 +2124,8 @@ $(function(){
         
 
 
-    
+        <!-- <button onclick=partShot() style="height: 80px; width: 150px;" class="down"><img src="./img/다운로드.png" alt="다운로드"></button> -->
+        <input type="button" onclick=partShot() class="down">
 <!-- ================================================================================================================ -->
      
 </body>
