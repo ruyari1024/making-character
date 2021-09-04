@@ -43,6 +43,7 @@ header {
   .button{
     display:flex;
     float: right;
+    
   }
   .button_tab2{
     display:flex;
@@ -59,11 +60,14 @@ header {
   .button_tab6{
     display: flex;
   }
+  .button_tab7{
+    display: flex;
+  }
   .button_1{
    /* display: flex; */
    text-align: left;
    margin-top: 20px;
-   margin-left: 10px;
+   margin-left: 15px;
   }
   .button_2{
    text-align: left;
@@ -77,58 +81,83 @@ header {
   .button_4{
    /* display: flex; */
    text-align: right;
-   margin-top: 20px;
-   margin-left: 10px;
+   margin: 20px;
   }
   .button_5{
    /* display: flex; */
    text-align: left;
-   margin-top: 20px;
-   margin-left: 22px;
+   margin: 20px;
   }
   .button_6{
    /* display: flex; */
    text-align: left;
-   margin-top: 20px;
-   margin-left: 25px;
+   margin: 20px;
   }
   .button_7{
    /* display: flex; */
    text-align: left;
-   margin-top: 20px;
-   margin-left: 25px;
+   margin: 20px;
   }
   .button8{
    /* display: flex; */
    text-align: left;
-   margin-top: 20px;
-   margin-left: 20px;
+   margin: 20px;
   }
   .button9{
    /* display: flex; */
    text-align: left;
-   margin-top: 20px;
-   margin-left: 25px;
+   margin: 20px;
   }
   .button15{
    /* display: flex; */
    text-align: left;
-   margin-top: 20px;
-   margin-left: 25px;
+   margin: 20px;
   }
   .button10{
    /* display: flex; */
    text-align: left;
-   margin-top: 20px;
-   margin-left: 15px;
+   margin: 20px;
+  }
+  .button_3-2{
+   /* display: flex; */
+   text-align: left;
+   margin: 20px;
+  }
+  .button_5-2{
+   /* display: flex; */
+   text-align: left;
+   margin: 20px;
+  }
+  .button_7-2{
+   /* display: flex; */
+   text-align: left;
+   margin: 20px;
+  }
+  .button_9-2{
+   /* display: flex; */
+   text-align: left;
+   margin: 20px;
+  }
+  .button11{
+   /* display: flex; */
+   text-align: left;
+   margin: 20px;
+  }
+  .button_11-2{
+   /* display: flex; */
+   text-align: left;
+   margin: 20px;
   }
  input.down {
-  background:url( "./img/다운로드.png" ) no-repeat;
-   float: right;
-   margin-top: 12.62%;
-   margin-right: 10%;
-   width: 150px;
-   height: 100px;
-   
+   float:right;
+   width: 200px;
+   height: 150px;
+   right: 50px;
+   margin-right: 40%;
+   margin-top: -26%;
    cursor: pointer;
+ }
+ button{
+   width: 120px;
+   height: 120px;
  }
