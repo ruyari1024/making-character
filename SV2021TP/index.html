@@ -1492,6 +1492,26 @@ jQuery(document).ready(function() {
         }
     });
 });
+jQuery(document).ready(function() {
+     if(jQuery("#displayDiv101").css("display") != "none") {
+
+            jQuery("#displayDiv101").css("display", "none");
+        }
+
+    
+    jQuery("#btn101").click(function() {
+
+        if(jQuery("#displayDiv101").css("display") == "none") {
+
+            jQuery("#displayDiv101").css("display", "block");
+        }
+       
+        else {
+
+            jQuery("#displayDiv101").css("display", "none");
+        }
+    });
+});
 $(function(){
   $('.tabcontent > div').hide();
   $('.tabnav a').click(function () {
@@ -1976,6 +1996,10 @@ $(function(){
                     <!-- ----------------------------- -->
                     <div id="displayDiv69" style="position: absolute; top: 40px;">
                         <img src="img/캐릭터/옷/셔츠.png">
+                    </div>   
+                    <!-- ----------------------------- -->
+                    <div id="displayDiv101" style="position: absolute; top: 40px;">
+                        <img src="img/캐릭터/옷/티셔츠.png">
                     </div>   
                     <!-- ----------------------------- -->
                     <div id="displayDiv70" style="position: absolute; top: 40px;">
