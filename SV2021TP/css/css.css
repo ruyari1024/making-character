@@ -152,6 +152,13 @@ header {
   .button11{
     margin-top: 20px;
   }
+  .button_10{
+    text-align: left;
+    margin: 20px;
+  }
+  .button87{
+    color: coral;
+  }
  input.down {
    float:right;
    width: 200px;
