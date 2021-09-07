@@ -14,7 +14,7 @@ ul,li {list-style:none;}
 .tabcontent{padding: 20px; height:700px; border:1px solid #ddd; border-top:none;}
 
 header {
-    height: 75px;
+    height: 65.4px;
     padding: 1rem;
     color: rgb(100, 82, 82);
     background: #dde9f7;
@@ -26,8 +26,8 @@ header {
 
   }
   .logo{
-      padding-top: 10;
-      
+      padding-top: -30px;
+      text-align: left;
   }
   
 
