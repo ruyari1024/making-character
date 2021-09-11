@@ -11,6 +11,9 @@
             background: url("./img/다운로드.png") no-repeat;
             border: 0;
         }
+        button{
+            border-radius: 12px;
+        }
     </style>
     <script src="./scripts/html2canvas.js"></script>
     <script src="./scripts/pic.js"></script>
@@ -1758,6 +1761,55 @@ jQuery(document).ready(function() {
         }
     });
 });
+jQuery(document).ready(function() {
+if(jQuery("#color").css("display") != "none") {
+
+            jQuery("#a003").css("display", "none");
+            jQuery("#a004").css("display", "none");
+        }
+    jQuery("#color1").click(function() {
+
+        if(jQuery("#a001").css("display") == "none") {
+            if(jQuery("#a002").css("display") == "none") {
+            jQuery("#a001").css("display", "block");
+            jQuery("#a002").css("display", "block");
+            jQuery("#a003").css("display", "none");
+            jQuery("#a004").css("display", "none");
+        }
+    }
+       
+        else {
+
+            jQuery("#a001").css("display", "block");
+            jQuery("#a002").css("display", "bolck");
+            jQuery("#a003").css("display", "none");
+            jQuery("#a004").css("display", "none");
+        }
+    });
+});
+jQuery(document).ready(function() {
+    jQuery("#color1").click(function() {
+
+        if(jQuery("#a001").css("display") == "none") {
+            if(jQuery("#a002").css("display") == "none") {
+                if(jQuery("#a003").css("display") == "none") {
+            jQuery("#a001").css("display", "none");
+            jQuery("#a002").css("display", "none");
+            jQuery("#a003").css("display", "block");
+            jQuery("#a004").css("display", "block");
+        }
+    }
+}
+       
+        else {
+
+            jQuery("#a001").css("display", "none");
+            jQuery("#a002").css("display", "none");
+            jQuery("#a003").css("display", "block");
+            jQuery("#a004").css("display", "block");
+        }
+    });
+});
 $(function(){
   $('.tabcontent > div').hide();
   $('.tabnav a').click(function () {
@@ -1822,77 +1874,104 @@ $(function(){
                  <!-- ----------------------------- -->
                  <div class="button05">              
                     <button type="button" id="btn5" style="margin-bottom: 20PX;"><h3></h3></button>
-                </div>
+                 </div>
             </div>
+            
+            
           </div>
           <div id="tab02">
               <div class="button_tab2">
-                <div class="button_2">
+                <div class="button_2" id="a001">
                     <!-- ----------------------------- -->
                     <div class="button06">              
                         <button type="button" id="btn6" style="margin-bottom: 20PX;"><h3></h3></button>
-                    </div>
-                     <!-- ----------------------------- -->
-                     <div class="button07">              
-                        <button type="button" id="btn7" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
                      <!-- ----------------------------- -->
                      <div class="button08">              
                         <button type="button" id="btn8" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
                      <!-- ----------------------------- -->
-                     <div class="button06">              
-                        <button type="button" id="btn9" style="margin-bottom: 20PX;"><h3></h3></button>
-                    </div>
-                     <!-- ----------------------------- -->
-                     <div class="button07">              
-                        <button type="button" id="btn10" style="margin-bottom: 20PX;"><h3></h3></button>
-                    </div>
-                     
-                </div>
-                <!-- ================================================================================================================================= -->
-                <div class="button_3">
-                    <!-- ----------------------------- -->
-                    <div class="button08">              
+                     <div class="button08">              
                         <button type="button" id="btn11" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
                     <!-- ----------------------------- -->
-                    <div class="button06">              
-                        <button type="button" id="btn12" style="margin-bottom: 20PX;"><h3></h3></button>
-                    </div>
-                     <!-- ----------------------------- -->
-                     <div class="button07">              
+                    <div class="button07">              
                         <button type="button" id="btn13" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
                      <!-- ----------------------------- -->
-                     <div class="button08">              
-                        <button type="button" id="btn14" style="margin-bottom: 20PX;"><h3></h3></button>
-                    </div>
-                     <!-- ----------------------------- -->
-                    <div class="button09">              
+                     <div class="button09">              
                         <button type="button" id="btn15" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
                 </div>
-                <div class="button_3-2">
+                <!-- ================================================================================================================================= -->
+                <div class="button_3" id="a002">
+                    
+                    <div class="button12">              
+                        <button type="button" id="btn17" style="margin-bottom: 20PX;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                     <div class="button14">              
+                        <button type="button" id="btn19" style="margin-bottom: 20PX;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                </div>
+                <div class="button_3-2" id="a003">
+                    <!-- ----------------------------- -->
+                    <!-- ----------------------------- -->
+                    <div class="button07">              
+                        <button type="button" id="btn7" style="margin-bottom: 20PX; margin-top: 20px;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                     
+                     <div class="button07">              
+                        <button type="button" id="btn10" style="margin-bottom: 0PX;"><h3></h3></button>
+                    </div>
+                    <div class="button06">              
+                        <button type="button" id="btn12" style="margin-bottom: 20PX; margin-top: 20px;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- --> 
+                     <div class="button08">              
+                        <button type="button" id="btn14" style="margin-bottom: 0PX;"><h3></h3></button>
+                    </div>
                      <!-- ----------------------------- -->
                      <div class="button11">              
                         <button type="button" id="btn16" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
                      <!-- ----------------------------- -->
-                    <div class="button12">              
-                        <button type="button" id="btn17" style="margin-bottom: 20PX;"><h3></h3></button>
-                    </div>
-                     <!-- ----------------------------- -->
+                   
+                   
+                </div>
+                <div class="button_3-2-2" id="a004" style="margin-left: 20px;">
                     <div class="button13">              
-                        <button type="button" id="btn18" style="margin-bottom: 20PX;"><h3></h3></button>
+                        <button type="button" id="btn18" style="margin-bottom: 0PX; margin-top: 20px;" ><h3></h3></button>
                     </div>
                      <!-- ----------------------------- -->
-                    <div class="button14">              
-                        <button type="button" id="btn19" style="margin-bottom: 20PX;"><h3></h3></button>
-                    </div>
-                     <!-- ----------------------------- -->
+                   
                     <div class="button15">              
-                        <button type="button" id="btn20" style="margin-bottom: 20PX; margin: -21px; margin-left: -25px;"><h3></h3></button>
+                        <button type="button" id="btn20" style="margin-bottom: 20PX; margin: 2px; margin-left: -20px;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                     <div class="button06">              
+                        <button type="button" id="btn9" style="margin-bottom: 20PX;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                </div>
+                <div class="button_3-3" style="right: 20px; margin-left: 60px;">
+                     <!-- ----------------------------- -->
+                     <div class="c1" >              
+                        <button type="button" id="color1" style="margin-bottom: 5PX;width: 40px; height: 40px; background-color: aliceblue;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="c2">              
+                        <button type="button" id="color2" style="margin-bottom: 5PX;width: 40px; height: 40px;background-color: gold;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="c3">              
+                        <button type="button" id="color3" style="margin-bottom: 5PX;width: 40px; height: 40px;background-color: black;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="c4">              
+                        <button type="button" id="color3" style="margin-bottom: 5PX;width: 40px; height: 40px;background-color: indianred;"><h3></h3></button>
                     </div>
                      <!-- ----------------------------- -->
                 </div>
