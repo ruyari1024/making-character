@@ -1766,6 +1766,7 @@ if(jQuery("#color").css("display") != "none") {
 
             jQuery("#a003").css("display", "none");
             jQuery("#a004").css("display", "none");
+            jQuery("#a005").css("display", "none");
         }
     jQuery("#color1").click(function() {
 
@@ -1775,6 +1776,7 @@ if(jQuery("#color").css("display") != "none") {
             jQuery("#a002").css("display", "block");
             jQuery("#a003").css("display", "none");
             jQuery("#a004").css("display", "none");
+            jQuery("#a005").css("display", "none");
         }
     }
        
@@ -1784,20 +1786,21 @@ if(jQuery("#color").css("display") != "none") {
             jQuery("#a002").css("display", "bolck");
             jQuery("#a003").css("display", "none");
             jQuery("#a004").css("display", "none");
+            jQuery("#a005").css("display", "none");
         }
     });
 });
 jQuery(document).ready(function() {
-    jQuery("#color1").click(function() {
+    jQuery("#color2").click(function() {
 
-        if(jQuery("#a001").css("display") == "none") {
-            if(jQuery("#a002").css("display") == "none") {
-                if(jQuery("#a003").css("display") == "none") {
+        if(jQuery("#a003").css("display") == "none") {
+            if(jQuery("#a004").css("display") == "none") {
             jQuery("#a001").css("display", "none");
             jQuery("#a002").css("display", "none");
             jQuery("#a003").css("display", "block");
             jQuery("#a004").css("display", "block");
-        }
+            jQuery("#a005").css("display", "none");
+        
     }
 }
        
@@ -1805,8 +1808,31 @@ jQuery(document).ready(function() {
 
             jQuery("#a001").css("display", "none");
             jQuery("#a002").css("display", "none");
+            jQuery("#a005").css("display", "none");
             jQuery("#a003").css("display", "block");
             jQuery("#a004").css("display", "block");
+        }
+    });
+});
+jQuery(document).ready(function() {
+    jQuery("#color3").click(function() {
+
+        if(jQuery("#a005").css("display") == "none") {
+            jQuery("#a001").css("display", "none");
+            jQuery("#a002").css("display", "none");
+            jQuery("#a003").css("display", "none");
+            jQuery("#a004").css("display", "none");
+            jQuery("#a005").css("display", "block");
+        
+    }
+       
+        else {
+
+            jQuery("#a001").css("display", "none");
+            jQuery("#a002").css("display", "none");
+            jQuery("#a005").css("display", "block");
+            jQuery("#a003").css("display", "none");
+            jQuery("#a004").css("display", "none");
         }
     });
 });
@@ -1951,8 +1977,10 @@ $(function(){
                         <button type="button" id="btn20" style="margin-bottom: 20PX; margin: 2px; margin-left: -20px;"><h3></h3></button>
                     </div>
                      <!-- ----------------------------- -->
-                     <div class="button06">              
-                        <button type="button" id="btn9" style="margin-bottom: 20PX;"><h3></h3></button>
+                </div>
+                <div class="button_3-2-2" id="a005" style="margin-left: 20px;">
+                    <div class="button06">              
+                        <button type="button" id="btn9" style="margin-top: 20PX;"><h3></h3></button>
                     </div>
                      <!-- ----------------------------- -->
                 </div>
