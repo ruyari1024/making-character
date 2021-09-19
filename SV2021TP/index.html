@@ -1900,12 +1900,37 @@ jQuery(document).ready(function() {
     });
 });
 jQuery(document).ready(function() {
+     if(jQuery("#displayDiv_b-1").css("display") != "none") {
+
+            jQuery("#displayDiv_b-1").css("display", "none");
+            jQuery("#btn_rb1").css("border-color", "#eba176");
+        }
+
+    
+    jQuery("#btn_b1").click(function() {
+
+        if(jQuery("#displayDiv_b-1").css("display") == "none") {
+
+            jQuery("#displayDiv_b-1").css("display", "block");
+            jQuery("#btn_rb1").css("border-color", "rgb(153, 223, 255)");
+        }
+       
+        else {
+
+            jQuery("#displayDiv_b-1").css("display", "none");
+            jQuery("#btn_rb1").css("border-color", "#eba176");
+        }
+    });
+});
+jQuery(document).ready(function() {
 if(jQuery("#color").css("display") != "none") {
 
             jQuery("#a003").css("display", "none");
             jQuery("#a004").css("display", "none");
             jQuery("#a005").css("display", "none");
             jQuery("#a006").css("display", "none");
+            jQuery("#a007").css("display", "none");
+            jQuery("#a008").css("display", "none");
         }
     jQuery("#color1").click(function() {
 
@@ -1917,6 +1942,8 @@ if(jQuery("#color").css("display") != "none") {
             jQuery("#a004").css("display", "none");
             jQuery("#a005").css("display", "none");
             jQuery("#a006").css("display", "none");
+            jQuery("#a007").css("display", "none");
+            jQuery("#a008").css("display", "none");
         }
     }
        
@@ -1928,6 +1955,8 @@ if(jQuery("#color").css("display") != "none") {
             jQuery("#a004").css("display", "none");
             jQuery("#a005").css("display", "none");
             jQuery("#a006").css("display", "none");
+            jQuery("#a007").css("display", "none");
+            jQuery("#a008").css("display", "none");
         }
     });
 });
@@ -1942,6 +1971,8 @@ jQuery(document).ready(function() {
             jQuery("#a004").css("display", "block");
             jQuery("#a005").css("display", "none");
             jQuery("#a006").css("display", "none");
+            jQuery("#a007").css("display", "none");
+            jQuery("#a008").css("display", "none");
         
     }
 }
@@ -1954,6 +1985,8 @@ jQuery(document).ready(function() {
             jQuery("#a006").css("display", "none");
             jQuery("#a003").css("display", "block");
             jQuery("#a004").css("display", "block");
+            jQuery("#a007").css("display", "none");
+            jQuery("#a008").css("display", "none");
         }
     });
 });
@@ -1967,6 +2000,8 @@ jQuery(document).ready(function() {
             jQuery("#a004").css("display", "none");
             jQuery("#a005").css("display", "block");
             jQuery("#a006").css("display", "block");
+            jQuery("#a007").css("display", "none");
+            jQuery("#a008").css("display", "none");
         
     }
        
@@ -1978,6 +2013,36 @@ jQuery(document).ready(function() {
             jQuery("#a003").css("display", "none");
             jQuery("#a004").css("display", "none");
             jQuery("#a006").css("display", "block");
+            jQuery("#a007").css("display", "none");
+            jQuery("#a008").css("display", "none");
+        }
+    });
+});
+jQuery(document).ready(function() {
+    jQuery("#color4").click(function() {
+
+        if(jQuery("#a005").css("display") == "none") {
+            jQuery("#a001").css("display", "none");
+            jQuery("#a002").css("display", "none");
+            jQuery("#a003").css("display", "none");
+            jQuery("#a004").css("display", "none");
+            jQuery("#a005").css("display", "none");
+            jQuery("#a006").css("display", "none");
+            jQuery("#a007").css("display", "block");
+            jQuery("#a008").css("display", "block");
+        
+    }
+       
+        else {
+
+            jQuery("#a001").css("display", "none");
+            jQuery("#a002").css("display", "none");
+            jQuery("#a005").css("display", "none");
+            jQuery("#a003").css("display", "none");
+            jQuery("#a004").css("display", "none");
+            jQuery("#a006").css("display", "none");
+            jQuery("#a007").css("display", "block");
+            jQuery("#a008").css("display", "block");
         }
     });
 });
@@ -2157,6 +2222,38 @@ $(function(){
                     </div>
                      <!-- ----------------------------- -->
                 </div>
+                <div class="button_3-2-4" id="a007" style="margin-left: 20px;">
+                    <div class="button06">              
+                        <button type="button" id="btn_rb1" style="margin-top: 20PX;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button06">              
+                        <button type="button" id="btn_rb2" style="margin-top: 20PX;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button06">              
+                        <button type="button" id="btn_rb3" style="margin-top: 20PX;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button06">              
+                        <button type="button" id="btn_rb4" style="margin-top: 20PX;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button06">              
+                        <button type="button" id="btn_rb5" style="margin-top: 20PX;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                </div>
+                <div class="button_3-2-5" id="a008"style="margin-left: 40px; margin-right: 20px;">
+                    <div class="button06">              
+                        <button type="button" id="btn_rb6" style="margin-top: 20PX;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="button06">              
+                        <button type="button" id="btn_rb7" style="margin-top: 20PX;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                </div>
                 <div class="button_3-3" style="right: 20px; margin-left: 60px;">
                      <!-- ----------------------------- -->
                      <div class="c1" >              
@@ -2172,7 +2269,7 @@ $(function(){
                     </div>
                      <!-- ----------------------------- -->
                     <div class="c4">              
-                        <button type="button" id="color3" style="margin-bottom: 5PX;width: 40px; height: 40px;background-color: indianred;"><h3></h3></button>
+                        <button type="button" id="color4" style="margin-bottom: 5PX;width: 40px; height: 40px;background-color: indianred;"><h3></h3></button>
                     </div>
                      <!-- ----------------------------- -->
                 </div>
