@@ -76,6 +76,27 @@
 #btn_b6{
     background: url(../img/버튼/앞머리/머리7-흑발.png);
 }
+#btn_rb1{
+    background: url(../img/버튼/앞머리/머리1-고급.png);
+}
+#btn_rb2{
+    background: url(../img/버튼/앞머리/머리2-고급.png);
+}
+#btn_rb3{
+    background: url(../img/버튼/앞머리/머리3-고급.png);
+}
+#btn_rb4{
+    background: url(../img/버튼/앞머리/머리4-고급.png);
+}
+#btn_rb5{
+    background: url(../img/버튼/앞머리/머리5-고급.png);
+}
+#btn_rb6{
+    background: url(../img/버튼/앞머리/머리6-고급.png);
+}
+#btn_rb7{
+    background: url(../img/버튼/앞머리/머리7-고급.png);
+}
 #btn21{
     background: url(../img/버튼/뒷머리/뒷1-백발.png);
 }
