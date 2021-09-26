@@ -2100,6 +2100,44 @@ if(jQuery("#color").css("display") != "none") {
     });
 });
 jQuery(document).ready(function() {
+if(jQuery("#color5").css("display") != "none") {
+
+            jQuery("#a011").css("display", "none");
+            jQuery("#a012").css("display", "none");
+            jQuery("#a013").css("display", "none");
+            jQuery("#a014").css("display", "none");
+            jQuery("#a015").css("display", "none");
+            jQuery("#a016").css("display", "none");
+        }
+    jQuery("#color5").click(function() {
+
+        if(jQuery("#a009").css("display") == "none") {
+            if(jQuery("#a010").css("display") == "none") {
+            jQuery("#a009").css("display", "block");
+            jQuery("#a010").css("display", "block");
+            jQuery("#a011").css("display", "none");
+            jQuery("#a012").css("display", "none");
+            jQuery("#a013").css("display", "none");
+            jQuery("#a014").css("display", "none");
+            jQuery("#a015").css("display", "none");
+            jQuery("#a016").css("display", "none");
+        }
+    }
+       
+        else {
+
+            jQuery("#a009").css("display", "block");
+            jQuery("#a010").css("display", "bolck");
+            jQuery("#a011").css("display", "none");
+            jQuery("#a012").css("display", "none");
+            jQuery("#a013").css("display", "none");
+            jQuery("#a014").css("display", "none");
+            jQuery("#a015").css("display", "none");
+            jQuery("#a016").css("display", "none");
+        }
+    });
+});
+jQuery(document).ready(function() {
     jQuery("#color2").click(function() {
 
         if(jQuery("#a003").css("display") == "none") {
@@ -2182,6 +2220,34 @@ jQuery(document).ready(function() {
             jQuery("#a006").css("display", "none");
             jQuery("#a007").css("display", "block");
             jQuery("#a008").css("display", "block");
+        }
+    });
+});
+jQuery(document).ready(function() {
+    jQuery("#color6").click(function() {
+
+        if(jQuery("#a011").css("display") == "none") {
+            jQuery("#a009").css("display", "none");
+            jQuery("#a010").css("display", "none");
+            jQuery("#a011").css("display", "block");
+            jQuery("#a012").css("display", "block");
+            jQuery("#a013").css("display", "none");
+            jQuery("#a014").css("display", "none");
+            jQuery("#a015").css("display", "none");
+            jQuery("#a016").css("display", "none");
+        
+    }
+       
+        else {
+
+            jQuery("#a009").css("display", "none");
+            jQuery("#a010").css("display", "none");
+            jQuery("#a011").css("display", "block");
+            jQuery("#a012").css("display", "block");
+            jQuery("#a013").css("display", "none");
+            jQuery("#a014").css("display", "none");
+            jQuery("#a015").css("display", "none");
+            jQuery("#a016").css("display", "none");
         }
     });
 });
@@ -2416,7 +2482,7 @@ $(function(){
           </div>
           <div id="tab03">
               <div class="button_tab3">
-                <div class="button_4">
+                <div class="button_4" id="a009">
                     <div class="button16">              
                         <button type="button" id="btn21" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
@@ -2439,7 +2505,7 @@ $(function(){
                      <!-- ----------------------------- -->
                 </div>
                 <!-- ================================================================================================================================= -->
-                <div class="button_5">
+                <div class="button_5"id="a010">
                    
                     <div class="button26">              
                         <button type="button" id="btn31" style="margin-bottom: 20PX;"><h3></h3></button>
@@ -2450,7 +2516,7 @@ $(function(){
                     </div>
                      <!-- ----------------------------- -->
                 </div>
-                <div class="button_5-2">
+                <div class="button_5-2"id="a011">
                     <div class="button17">              
                         <button type="button" id="btn22" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
@@ -2477,7 +2543,7 @@ $(function(){
                         <button type="button" id="btn30" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
                 </div>
-                <div class="button_5-3">
+                <div class="button_5-3"id="a012">
                     <div class="button27">              
                         <button type="button" id="btn32" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
@@ -2487,6 +2553,28 @@ $(function(){
                         <button type="button" id="btn34" style="margin-bottom: 20PX;"><h3></h3></button>
                     </div>
                 
+                </div>
+                <div class="button_5-4"id="a013">
+                    <div class="button27">              
+                        <button type="button" id="btn80" style="margin-bottom: 20PX;"><h3></h3></button>      
+                    </div>
+                </div>
+                <div class="button_5-color" style="margin-top: 20px; margin-left: 60px;">
+                    <div class="c5" >              
+                        <button type="button" id="color5" style="margin-bottom: 5PX;width: 40px; height: 40px; background-color: aliceblue;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="c6">              
+                        <button type="button" id="color6" style="margin-bottom: 5PX;width: 40px; height: 40px;background-color: gold;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="c7">              
+                        <button type="button" id="color7" style="margin-bottom: 5PX;width: 40px; height: 40px;background-color: black;"><h3></h3></button>
+                    </div>
+                     <!-- ----------------------------- -->
+                    <div class="c8">              
+                        <button type="button" id="color8" style="margin-bottom: 5PX;width: 40px; height: 40px;background-color: indianred;"><h3></h3></button>
+                    </div>
                 </div>
               </div>
           </div>
